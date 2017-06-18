@@ -1,0 +1,1152 @@
+@charset "utf-8";
+
+* { 
+    box-sizing: border-box;
+    
+}
+/* Formatação do body */
+
+body { 
+    background-color: rgba(0, 0, 0, 0.59);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.row:before,.row:after {content:""; clear: both; display: block;}
+
+/*TipoDeLetraUtilizado*/
+
+@font-face {
+        font-family:LeagueSpartan-Bold;
+        src:url(fonts/LeagueSpartan-Bold.otf)
+}
+
+/*Menu*/
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position:fixed;
+    align-items: center;
+}
+
+li {
+    display:inline-block;
+    align-items: center;
+}
+
+li a {
+    display:block;
+    min-width:150px;
+    height:35px;
+    text-align:center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    color:#fff;
+    background:#1b6e3a;
+    text-decoration:none;
+    line-height:40px;
+}
+
+li:hover a {
+    background:#04e3e0;
+    font-weight:bold;
+}
+
+li:hover ul a {
+    background:#f3f3f3;
+    color:#2f3036;
+    height:50px;
+    line-height:40px;
+}
+
+li:hover li a:hover {
+    background: #f7e214;
+    color:#fff;
+}
+
+/*Menu*/
+
+/*Start Viewport Desktop*/
+@media screen and (min-width: 991px) {
+    
+    
+    .col_1 {width: 8.33%;}
+    .col_2 {width: 16.66%;}
+    .col_3 {width: 25%;}
+    .col_4 {width: 33.33%;}
+    .col_5 {width: 41.66%;}
+    .col_6 {width: 50%;}
+    .col_7 {width: 58.33%;}
+    .col_8 {width: 66.66%;}
+    .col_9 {width: 75%;}
+    .col_10 {width: 83.33%;}
+    .col_11 {width: 91.66%;}
+    .col_12 {width: 100%;}
+    
+    [class*="col_"]:first-child {margin-left: 0;}
+    [class*="col_"]:last-child {margin-right: 0;}
+
+    [class*="col_"] {float:left;} 
+    
+    
+/*menu*/
+    
+#menu {
+        position:fixed;
+        margin-left:80px;
+    }
+
+#open-menu { 
+    display:none;
+        
+    }
+    
+li ul {
+    display:none;
+}
+
+li ul li {
+    display:block;
+    float:none;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 150px;
+}
+
+ul li a:hover + .hidden, .hidden:hover {
+    display:block;
+}
+
+/*Hamburguer*/
+    
+.hamburguerlogo {
+        height: 2em;
+        height: 2em;
+        overflow: auto;
+        display:none;
+    }
+    
+
+/*header*/
+    
+    
+.header {
+        background-color:white;
+        height: 100%;
+        width: 100%;
+    } 
+    
+/*header*/
+    
+/*sobre*/
+    
+.sobre {
+    background-color:white;
+    height: 45em;
+    width: 100%;
+    }   
+    
+.texto1{
+    color:black;
+    font-family:LeagueSpartan-Bold;
+    width:100%;
+    font-size:2em;
+    text-align: center;}    
+    
+/*FotoCarolina*/
+    
+.carolina {
+    width: 58%;
+    height: 65%;
+    float:right;
+    margin-right: 2em;
+    margin-top: 5em;
+    }
+    
+.texto2 {
+    font-size: 1.2em;
+    width: 18em;
+    margin-top: 2em;
+    margin-left: 3em;
+    font-weight: lighter;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    }
+    
+/*objetivos*/ 
+    
+.texto3{
+    color:white;
+    font-family:LeagueSpartan-Bold;
+    width:100%;
+    font-size:2em;
+    text-align: center;
+    }    
+    
+/*SLIDER*/
+    
+.containerslide {
+    margin-top: 5%;
+    height: 60em;
+    text-align: center;  
+    }    
+
+
+#slideshow > div {
+  position: absolute;
+  z-index: -1;
+}
+.imgslide {
+    width: 50%; 
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+/*SLIDER*/
+
+.texto4{
+    color:white;
+     font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;
+    width:100%;
+    font-size:2em;
+    text-align: center;
+    margin-top:35%;
+    }    
+    
+.texto5{
+    margin-top:1%;
+    color:white;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;
+    width:100%;
+    font-size:1.5em;
+    text-align: center;
+    }        
+    
+/*testemunhos*/  
+
+.agenda1 {
+        background-color: #04e3e0;
+        width: 100%;
+        height: 30em;
+    }
+        
+    
+.titulotestemunhos {
+    color:white;
+    font-weight: lighter;
+    font-family:LeagueSpartan-Bold;
+    font-size:2em;
+    width: 100%;
+    margin-left: 45%;
+    text-align: center;
+    }    
+    
+.testemunhos1 {
+    color:white;
+    height: 12em;
+    width: 12em;
+    display: inline-block;
+    margin-top: 2em;
+    justify-content: center;
+    margin-left: 10em;
+    }
+    
+/*Coloquei 2 class nos textos porque no texto do david(.textotestemunhos1), não estava a conseguir ficar igual aos outros. Peço desculpa por este erro*/
+
+.textotestemunhos {
+    color: #ffffff;
+    font-size:0.8em;
+    width:25em;
+    height: 5.5em;
+    margin-left:5%;
+    display: inline-block;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;
+    }
+    
+.textotestemunhos1 {
+    color: #ffffff;
+    font-size:0.8em;
+    width:25em;
+    height: 5.8em;
+    margin-left:5%;
+    margin-top:5.5%;
+    display: inline-block;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;
+    }
+    
+    
+/*agenda*/
+    
+.agenda {
+        background-color: white;
+        width: 100%;
+        height: 50em;
+    }
+
+.textoagenda { 
+        color: black;
+        text-align: center;
+        font-size: 2em;
+        width: 100%;
+        height: 5%;
+        margin-left:8%;
+        font-family:LeagueSpartan-Bold;
+    }
+    
+/*Escolhi fazer 2 imagens para a agenda, porque gostei do design e achei que ficaria melhor assim e conseguia poupar tempo, devido a colocar todos os logos de cada sitio onde vai ser realizado*/
+    
+.imagemagenda { 
+        width: 40%;
+        height: 80%;
+        display:inline-block;
+        margin-left: 7%;
+    }
+
+
+
+ /* Caixa de Mensagem */
+    
+.mensagem{ 
+    color:white;
+    font-family:LeagueSpartan-Bold;
+    width:100%;
+    text-align:center;
+    font-size: 2em;
+    height: 55%;
+        
+    }
+.caixademensagem {
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.caixademensagem input {
+        
+    }      
+    
+input[type=text], select, textarea {
+    width: 50vw; 
+    padding: 1vw; 
+    border: 0.1vw solid #ccc; 
+    border-radius: 0.5vw; 
+    box-sizing: border-box; 
+    margin-top: 0.5vw; 
+    margin-bottom: 16px; 
+}
+    
+
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+input[type=submit]:hover {
+    background-color: #22dec1;
+}
+
+/*Contactos*/
+    
+.informa {
+        background-color: #04e3e0;
+        height: 21em;
+        width: 100%;
+    } 
+    
+.informatext {
+    font-family:LeagueSpartan-Bold;
+    font-size:2em;
+    width: 100%;
+    color:white;
+    text-align: center;
+    
+    }
+    
+ .redessociaiscaixa { 
+     width: 100%;
+     text-align: center;
+    }
+    
+.redessociais{
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    justify-content: center;
+    }
+    
+.contacto { 
+    color:#000000;
+    width: 100%;
+    font-size:1em;
+    text-align: center;
+    font-family:LeagueSpartan-Bold;
+    font-weight: lighter;   
+        
+    }
+
+.contacto1 { 
+    color:#ffffff;
+    width: 100%;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;   
+        
+    }
+    
+/*BotãoTop*/    
+
+.arrow {
+    width: 2.5em;
+    height: 2.5em;
+    float:right;
+    margin-right: 48%;
+    }
+    
+/*Contactos*/ 
+    
+}
+
+/*End Viewport Desktop*/
+
+
+/*Comentei só em Desktop, porque para tablet e smartphone é o mesmo comentário*/
+
+
+/*Start Viewport Tablet*/
+@media screen and (min-width: 480px) and (max-width: 990px) {
+    
+    .colt_1 {width: calc(11.1%);}
+    .colt_2 {width: calc(23.8%);}
+    .colt_3 {width: calc(36.5%);}
+    .colt_4 {width: calc(49.2%);}
+    .colt_5 {width: calc(61.9%);}
+    .colt_6 {width: calc(74.6%);}
+    .colt_7 {width: calc(87.3%);}
+    .colt_8 {width: calc(100%);}
+
+    
+    [class*="colt_"]:first-child {margin-left: 0;}
+    [class*="colt_"]:last-child {margin-right: 0;}
+
+    [class*="colt_"] {float:left;}
+    
+/*menu*/   
+    
+.open-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+    width:100%;
+    position:fixed;
+}
+
+input[type=checkbox] {
+    display:none;
+}
+
+input[type=checkbox]:checked ~ #menu {
+    display:block;
+}
+
+.hamburguerlogo {
+        height: 2em;
+        overflow: auto;
+    }
+
+/*menu*/
+    
+ul {
+        position:static;
+        display:none;
+    }
+
+    li {
+    }
+
+    ul li, li a {
+        width:100%;
+    }
+
+    .open-menu {
+        display:block;
+    }
+
+  /*header*/
+    
+    
+.header {
+        background-color:white;
+        height: 100%;
+        width: 100%;
+    } 
+    
+/*header*/
+    
+/*sobre*/
+    
+.sobre {
+    background-color:white;
+    height: 48em;
+    width: 100%;
+    }   
+    
+.texto1{
+    color:black;
+    font-family:LeagueSpartan-Bold;
+    width:100%;
+    font-size:2em;
+    text-align: center;}    
+    
+.carolina {
+    width: 35%;
+    height: 25%;
+    float:right;
+    margin-right: 1em;
+    margin-top: 12em;
+    }
+    
+.texto2 {
+    font-size: 1.2em;
+    width: 18em;
+    margin-top: 2em;
+    margin-left: 3em;
+    font-weight: lighter;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    }
+    
+/*objetivos/Medidas*/  
+    
+.objetivo {
+        background-color: #04e3e0;
+        height: 20em;
+        width: 100%;
+    } 
+    
+.texto3{
+    color: white;
+    font-family: LeagueSpartan-Bold;
+    width: 100%;
+    font-size:2em;
+    text-align: center;
+    }    
+    
+/*SLIDER*/
+    
+.containerslide {
+    margin-top: 5%;
+    height: 50em;
+    text-align: center;  
+    }    
+
+
+#slideshow > div {
+  position: absolute;
+  z-index: -1;
+}
+.imgslide {
+    width: 50%; 
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+    
+    
+/*SLIDER*/
+
+
+.texto4 {
+    color:white;
+    font-size: 1.8em;
+    width: 100%;
+    height: 5%;
+    margin-top:40%;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+        
+    }
+
+.texto5 {
+    color:white;
+    width: 100%;
+    height: 17%;
+    font-size: 1.3em;
+    margin-top: 10%;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    }
+    
+    
+/*testemunhos*/   
+    
+.agenda1 {
+        background-color: #04e3e0;
+        width: 100%;
+        height: 30em;
+    }
+       
+.titulotestemunhos {
+    color:white;
+    font-weight: lighter;
+    font-family:LeagueSpartan-Bold;
+    font-size:2em;
+    width: 100%;
+    margin-left: 45%;
+    text-align: center;
+    }    
+    
+.testemunhos1 {
+    height: 9em;
+    width: 9em;
+    display: inline-block;
+    margin-top: 2em;
+    justify-content: center;
+    margin-left: 5em;
+    }
+
+.textotestemunhos {
+    color: white;
+    font-size:0.9em;
+    width: 15em;
+    height: 3.5em;
+    margin-left:3%;
+    display: inline-block;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;
+    margin-bottom: 3%;
+    }
+    
+.textotestemunhos1 {
+    color: white;
+    font-size:0.9em;
+    width:15em;
+    height: 3.5em;
+    margin-left:3%;
+    margin-top:5%;
+    display: inline-block;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;
+    margin-bottom: 3%;
+    }
+    
+/*agenda*/
+    
+.agenda {
+        background-color: white;
+        width: 100%;
+        height: 35em;
+        flex-direction: column;
+    }
+.textoagenda { 
+        color: black;
+        text-align: center;
+        font-size: 2em;
+        width: 100%;
+        height: 5%;
+        margin-left:8%;
+        font-family:LeagueSpartan-Bold;
+    }
+    
+.imagemagenda { 
+        width: 40%;
+        height: 70%;
+        display:inline-block;
+        margin-left: 7%;
+    }
+
+/* Caixa de Mensagem */
+    
+.mensagem{ 
+    color:white;
+    font-family:LeagueSpartan-Bold;
+    width:100%;
+    text-align:center;
+    font-size: 2em;
+    height: 55%;
+        
+    }
+    
+.caixademensagem {
+    margin-top: 5vw;
+    text-align: center;
+}
+
+.caixademensagem input {
+        
+    }    
+    
+input[type=text], select, textarea {
+    width: 50vw; 
+    padding: 1vw;  
+    border: 0.1vw solid #ccc; 
+    border-radius: 0.5vw;
+    box-sizing: border-box; 
+    margin-top: 0.5vw; 
+    margin-bottom: 16px; 
+}
+    
+
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+
+input[type=submit]:hover {
+    background-color: #22dec1;
+}
+
+/*Contactos*/
+    
+.informa {
+        background-color: #04e3e0;
+        height: 23em;
+        width: 100%;
+    } 
+    
+.informatext {
+    font-family:LeagueSpartan-Bold;
+    font-size:2em;
+    width: 100%;
+    color:white;
+    text-align: center;
+    
+    }
+    
+ .redessociaiscaixa { 
+     width: 100%;
+     text-align: center;
+    }
+    
+.redessociais{
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    justify-content: center;
+    }
+    
+.contacto { 
+    color:#000000;
+    width: 100%;
+    font-size:1em;
+    text-align: center;
+    font-family:LeagueSpartan-Bold;
+    font-weight: lighter;   
+        
+    }
+
+.contacto1 { 
+    color:#ffffff;
+    width: 100%;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;   
+        
+    }
+    
+
+.arrow {
+    width: 2.5em;
+    height: 2.5em;
+    float:right;
+    margin-right: 48%;
+    }
+    
+/*Contactos*/    
+}
+/*End Viewport Tablet*/
+
+
+
+
+/*Start Viewport Smartphone*/
+@media screen and (max-width: 480px) {
+   
+    .colm_1 {width: calc(18.72%);}
+    .colm_2 {width: calc(39.04%);}
+    .colm_3 {width: calc(59.36%);}
+    .colm_4 {width: calc(79.68%);}
+    .colm_5 {width: calc(100%);}
+    
+    [class*="colm_"]:first-child {margin-left: 0;}
+    [class*="colm_"]:last-child {margin-right: 0;}
+
+    [class*="colm_"] {float:left;}
+    
+/*menu*/   
+    
+.open-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+    position:fixed;
+}
+
+input[type=checkbox] {
+    display:none;
+}
+
+input[type=checkbox]:checked ~ #menu {
+    display:block;
+}
+
+.hamburguerlogo {
+        height: 1.9em;
+        overflow: auto;
+    }
+
+/*menu*/
+    
+ul {
+        position:static;
+        display:none;
+    }
+
+    li {
+        margin-bottom:1px;
+    }
+
+    ul li, li a {
+        width:100%;
+    }
+
+    .open-menu {
+        display:block;
+    }
+
+  /*header*/
+    
+    
+.header {
+        background-color:white;
+        height: 100%;
+        width: 100%;
+    } 
+    
+/*header*/
+    
+/*sobre*/
+    
+.sobre {
+    background-color:white;
+    height: 47em;
+    width: 100%;
+    }   
+    
+.texto1{
+    color:black;
+    font-family:LeagueSpartan-Bold;
+    width:100%;
+    font-size:1.6em;
+    text-align: center;
+    }    
+    
+.carolina {
+    width: 55%;
+    height: 20%;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 3em;
+    flex-direction: column;
+    }
+    
+.texto2 {
+    font-size: 1em;
+    width: 90%;
+    margin-top: 2em;
+    margin-left: 1em;
+    font-weight: lighter;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    flex-direction: column;
+    }
+    
+/*objetivos*/  
+    
+.objetivo {
+        background-color: #04e3e0;
+        height: 65em;
+        width: 100%;
+    } 
+    
+.texto3{
+    color:white;
+    font-family:LeagueSpartan-Bold;
+    width:100%;
+    font-size:2em;
+    text-align: center;
+    }    
+    
+/*SLIDER*/
+    
+.containerslide {
+    margin-top: 5%;
+    height: 38em;
+    text-align: center;  
+    }    
+
+
+#slideshow > div {
+  position: absolute;
+  z-index: -1;
+}
+.imgslide {
+    width: 65%; 
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+    
+    
+/*SLIDER*/
+
+.texto4 {
+    color:white;
+    margin-top:40%;
+    font-size: 1.2em;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+        
+    }
+
+.texto5 {
+    color:white;
+    width: 100%;
+    height: 17%;
+    font-size: 1em;
+    margin-top:20%;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    }
+    
+    
+/*testemunhos*/   
+    
+.agenda1 {
+        background-color: #04e3e0;
+        width: 100%;
+        height: 60em;
+        flex-direction: column;
+    }
+        
+    
+.titulotestemunhos {
+    color:white;
+    font-weight: lighter;
+    font-family:LeagueSpartan-Bold;
+    font-size:2em;
+    width: 100%;
+    margin-left: 45%;
+    text-align: center;
+    }    
+    
+.testemunhos1 {
+    height: 9em;
+    width: 9em;
+    display: inline-block;
+    margin-top: 2em;
+    justify-content: center;
+    margin-left: 5em;
+    }
+
+.textotestemunhos {
+     color: white;
+    font-size:0.9em;
+    width:90%;
+    height: 4em;
+    margin-top:3%;
+    margin-left:3%;
+    display: inline-block;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;
+    flex-direction: column;
+    }
+    
+.textotestemunhos1 {
+    color: white;
+    font-size:0.9em;
+    width:90%;
+    height: 4em;
+    margin-top:3%;
+    margin-left:3%;
+    display: inline-block;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;
+    flex-direction: column;
+    }
+    
+/*agenda*/
+    
+.agenda {
+        background-color: white;
+        width: 100%;
+        height: 63em;
+    }
+.textoagenda { 
+        color: black;
+        text-align: center;
+        font-size: 2em;
+        width: 100%;
+        height: 5%;
+        margin-left:8%;
+        font-family:LeagueSpartan-Bold;
+    }
+    
+.imagemagenda { 
+        width: 80%;
+        height: 40%;
+        display:inline-block;
+        margin-left: 12%;
+        flex-direction: column;
+        margin-top:5%;
+    }
+
+/* Caixa de Mensagem */
+    
+.mensagem{ 
+    color:white;
+    font-family:LeagueSpartan-Bold;
+    width:100%;
+    text-align:center;
+    font-size: 2em;
+    height: 55%;
+        
+    }
+    
+.caixademensagem {
+    margin-top: 5vw;
+    text-align: center;
+}
+
+    .caixademensagem input {
+        
+    }    
+    
+input[type=text], select, textarea {
+    width: 50vw; 
+    padding: 1vw; 
+    border: 0.1vw solid #ccc; 
+    border-radius: 0.5vw; 
+    box-sizing: border-box; 
+    margin-top: 0.5vw; 
+    margin-bottom: 16px; 
+}
+    
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+
+input[type=submit]:hover {
+    background-color: #22dec1;
+}
+   
+/*Contactos*/
+    
+.informa {
+        background-color: #04e3e0;
+        height: 23em;
+        width: 100%;
+    } 
+    
+.informatext {
+    font-family:LeagueSpartan-Bold;
+    font-size:2em;
+    width: 100%;
+    color:white;
+    text-align: center;
+    
+    }
+    
+ .redessociaiscaixa { 
+     width: 100%;
+     text-align: center;
+    }
+    
+.redessociais{
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    justify-content: center;
+    }
+    
+.contacto { 
+    color:#000000;
+    width: 100%;
+    font-size:1em;
+    text-align: center;
+    font-family:LeagueSpartan-Bold;
+    font-weight: lighter;   
+        
+    }
+
+.contacto1 { 
+    color:#ffffff;
+    width: 100%;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-weight: lighter;   
+        
+    }
+    
+
+.arrow {
+    width: 2.5em;
+    height: 2.5em;
+    float:right;
+    margin-right: 48%;
+    }
+    
+/*Contactos*/ 
+     
+ }
+
+/*End Viewport Smartphone*/
